@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trnansform practice </title>
+</head>
+<style>
+    .box{
+        margin-top: 200px;
+        margin-left: 200px;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        border: 5px dotted red;
+        background-color: blue;
+        
+        /* transform: translate(30px, -30px); */
+    }
+    .box::after{
+        content: 'After';
+        background: red;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%)
+    }
+    .class{
+        width: 200px;
+        height: 200px;
+        border: 3ps solid blue;
+        background-color: chartreuse;
+        position: relative;
+    }
+    .class::after{
+        font-size: 30px-;
+        content: 'love';
+        background: white;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform:translate(-50%);
+    }
+</style>
+<body> 
+    <h1 class="box">My box</h1>
+
+    <div class="class"></div>
+</body>
+</html>

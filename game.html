@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<style>
+    .field{
+        height: 800px;
+        width: 1000px;
+        border: 5px solid red;
+        background-color: green;
+        border-radius: 500px;
+    }
+    .bat{
+        transition: transform 200ms ease-in;
+    }
+    .field:hover .bat{
+        transform: rotate(-65deg);
+        transform-origin: top right;       
+    }
+    .ball{
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: red;
+        border: 2px solid red;
+        position: relative;
+        left: 560px; 
+        transition: transform 1s ease-out 0.3s;
+    }
+    .field:hover .ball{
+        transform: translate(800px, -100px);
+
+    }
+ /* there are four elements in trnasition or such elemnets ---1 the property-2.how long---3.how it will be such as ease-in or ease-out and 4. how delay it will be  */
+</style>
+<body>
+    <div class="field">
+        <img src="images/bat.png" alt="" class="bat">
+        <div class="ball"></div>
+    </div>
+    
+    
+</body>
+</html>

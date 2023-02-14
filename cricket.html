@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket today</title>
+</head>
+<style>
+    /* .feild{
+        height: 600px;
+        width: 75%;
+        border: 5px dotted red;
+        background-color: green;
+    }
+    .text{
+        color: cornsilk;
+        text-align: center;
+    }
+    .ball{
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 25px; 
+        position: relative;
+        left: 515px; 
+        transition: transform 1s ease-out 0.2s;   
+    }
+    .feild:hover .ball{
+        transform: translate(700px, -100px)
+    }
+    .bat{
+        transition: transform 0.1s ease-in;
+    }
+
+   .feild:hover .bat{
+    transform: rotate(-60deg);
+    transform-origin: top right;
+   } */
+   .feild{
+    width: 75%;
+    height: 50%;
+    background-color: darkgreen;
+    border: 5px dotted blue;
+   }
+   .text{
+    color: azure;
+   }
+   .feild:hover .bat{
+    transform: rotate(-60deg);
+    transform-origin: top right;
+    transition: transform 0.2s;
+   }
+   .bat{
+        transition: transform 0.1s ease-in;
+    }
+   .ball{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 25px;
+    position: relative;
+    left: 510px;
+    transition: transform 1s ease-out 0.2s;
+   }
+   .feild:hover .ball{
+    transform: translate(700px, 100px);
+   }
+</style>
+<body>
+    <div class="feild">
+        <h1 class="text">Today i will play cricket</h1>
+    <img class="bat" src="images/bat.png" alt="">
+    <div class="ball"></div>
+    </div>
+</body>
+</html>

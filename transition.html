@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+<style>
+    .transition{
+        height: 400px;
+        width: 400px;
+        margin-bottom: 30px;
+        border: 5px dotted blue;
+        background-color: green;
+        /* first point is the trnasotion and second point is how delay is transition */
+        transition: 1s background-color ease-in, 500ms transform ease-out 1s;
+    }
+    .transition:hover{
+        background-color: brown;
+        transform: rotate(45deg);
+    }
+</style>
+
+</head>
+<body>
+    <div class="transition">
+        <h1 class="transit">Linear</h1></div>
+    <div class="transition">
+        <h1 class="transit">Ease-in</h1></div>
+    <div class="transition">
+        <h1 class="transit">Ease-out</h1>
+    </div>
+    <div class="transition">
+        <h1 class="transit">Ease-in-out</h1>
+    </div>
+</body>
+</html>

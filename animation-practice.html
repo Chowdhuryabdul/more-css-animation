@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation practice</title>
+</head>
+<style>
+    @keyframes sliding {
+        0%{
+            background-color: brown;
+            left: 0;
+            top: 0;
+        }
+        25%{
+            top: 200px;
+            background-color: blue;
+            transform: scale(0.5);
+        }
+        50%{
+            top: 0;
+            background-color: burlywood;
+            transform: scale(1);
+        }
+        75%{
+            top: 200px;
+            background-color: chartreuse;
+            transform: scale(0.5);
+        }
+        100%{
+            background-color:  black;
+            left: 700px;
+            top: 0;
+        }
+    }
+    .stage{
+        height: 300px;
+        width: 800px;
+        background-color: green;
+    }
+    .ball{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        position: relative;
+        background-color: white;
+        animation: sliding 2s ease-in-out 0.5s infinite alternate;
+        animation-play-state: running;
+    }
+</style>
+<body>
+    <h1>Animation practice one more time</h1>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
