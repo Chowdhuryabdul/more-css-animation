@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customise css</title>
+</head>
+     <style>
+        :root{
+            --primary-color: green;
+            --secondary-color:red;
+            --single-border: 4px dotted blue;
+        }
+        .heading{
+        color: var(--primary-color)
+    }
+    p{
+        width: 50px;
+        border: 5px solid green;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .box{
+        color: var(--secondary-color)
+    }
+    .box-2{
+     color: var(--primary-color);
+    }
+    
+     </style>
+<body>
+    <h1 class="heading" id="heading-1">my strong heading-1</h1>
+    <h1 class="heading" id="heading-2">my strong heading-2</h1>
+    <h1 class="heading" id="heading-3">my strong heading-3</h1>
+    <h1 class="heading" id="heading-4">my strong heading-4</h1>
+    <p title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet maiores aut molestiae sed accusantium architecto neque? Quod, omnis accusamus?">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet maiores aut molestiae sed accusantium architecto neque? Quod, omnis accusamus?</p>
+    <div class="box">
+        <h2>I love you</h2>
+    </div>
+    <div class="box-2">
+        <h1>where is my sadia</h1>
+    </div>
+</body>
+</html>

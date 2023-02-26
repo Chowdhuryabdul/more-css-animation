@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation again</title>
+</head>
+<style>
+    @keyframes sliding{
+        0%{
+           background-color: aliceblue;
+           top: 0;
+           left: 0;
+        }
+        25%{
+            background-color: chartreuse;
+            top: 300px;
+            transform: scale(0.5);
+        }
+        50%{
+            background-color: yellow;
+            top: 0;
+            transform: scale(1s);
+        }
+        75%{
+            background-color: cyan;
+            top: 300px;
+            transform: scale(0.5);
+        }
+      100%{
+        background-color: mediumvioletred;
+        top: 0;
+        left: 900px;
+      }
+    }
+    .stage{
+        height: 400px;
+        width: 1000px;
+        background-color: brown;
+        border: 5px solid black;
+    }
+    .ball{
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        background-color: azure;
+        position: relative;
+        animation: sliding 2s ease-in-out 0.5s infinite alternate;
+        animation-play-state: running;
+
+    }
+</style>
+<body>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
